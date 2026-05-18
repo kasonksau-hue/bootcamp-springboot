@@ -1,0 +1,22 @@
+# You can manage the ports
+# server:
+#   port: 8081
+
+spring.datasource:
+  driverClassName: "org.postgresql.Driver"
+  url: "jdbc:postgresql://localhost:5432/bootcamp_2603"
+  username: "postgres"
+  password: "admin1234"
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: update
+
+api:
+  jsonplaceholder:
+    domain: "jsonplaceholder.typicode.com"
+    # version: "/v1"
+    path:
+      user: "/users"
+      post: "/posts"
+      comment: "/comments"
