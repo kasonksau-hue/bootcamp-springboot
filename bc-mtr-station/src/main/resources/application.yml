@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring.datasource:
+  driverClassName: "org.postgresql.Driver"
+  url: "jdbc:postgresql://postgres-container:5432/bootcamp_2603"
+  username: "postgres"
+  password: "admin1234"
+
+spring.jpa:
+  show-sql: false
+  hibernate.ddl-auto: update
+
+api:
+  gov:
+    domain: "rt.data.gov.hk"
+    version: "v1"
+    mtr:
+      schedule: "/transport/mtr/getSchedule.php"
+
+spring:
+  redis:
+    redis:
+      host: redis-container
+      port: 6379
